@@ -1,0 +1,50 @@
+# Git Repository Setup and Deployment Commands
+
+## After creating your GitHub repository, run these commands:
+
+# 1. Add remote repository (replace YOUR_USERNAME and YOUR_REPOSITORY_NAME)
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+
+# 2. Rename branch to main (GitHub's default)
+git branch -M main
+
+# 3. Push your code to GitHub
+git push -u origin main
+
+## Alternative: If you want to use SSH instead of HTTPS
+# git remote add origin git@github.com:YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+
+## To check your remote repository
+git remote -v
+
+## To push future changes
+git add .
+git commit -m "Your commit message"
+git push
+
+## GitHub Pages Setup (after pushing to GitHub):
+# 1. Go to your repository on GitHub
+# 2. Click Settings tab
+# 3. Scroll down to "Pages" in the left sidebar
+# 4. Under "Source", select "Deploy from a branch"
+# 5. Select "main" branch and "/ (root)" folder
+# 6. Click Save
+# 7. Your site will be available at: https://YOUR_USERNAME.github.io/YOUR_REPOSITORY_NAME
+
+## Quick Deployment Checklist:
+☐ Create GitHub account
+☐ Create new public repository
+☐ Copy repository URL
+☐ Run the git remote add command above
+☐ Run git push -u origin main
+☐ Enable GitHub Pages in repository settings
+☐ Update README.md with your live site URL
+☐ Test your live website
+
+## Updating Your Portfolio:
+# After making changes to your files:
+git add .
+git commit -m "Update portfolio content"
+git push
+
+# Changes will automatically deploy to your live site!
